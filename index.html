@@ -8,9 +8,28 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/animate.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<style>
+		.jiggle {
+			animation-duration: infinite;
+			animation-iteration-count: infinite;
+			animation-name: jiggle;
+			animation-timing-function: ease-in-out;
+
+			@keyframes jiggle {
+				from {
+					-webkit-transform: rotate(0deg); 
+				}
+
+				to {
+					-webkit-transform: rotate(-45deg);
+				}
+			}
+		}
+		</style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,18 +44,91 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown>
-		    	<script type="text/template">
-		        ## Page title
-
-		        A paragraph with some text and a [link](http://hakim.se).
-		    	</script>
+					<script type="text/template">
+						# Web Animation
+						#### <div class="animated infinite bounce">Making the web move</div>
+					</script>
 				</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Why?
+						* Guide a user
+						* Relationships between elements
+						* Distractions from whats happening behind the scene
+						* Add character
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# What should I use?
+						* CSS
+						* Canvas
+						* Web Animation API
+						* WebGL	
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# CSS
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Canvas
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Web Animation API
+					</script>
+				</section>
+				<section>
+					<p class="ciu_embed" data-feature="web-animation" data-periods="future_1,current,past_1,past_2">   <a href="http://caniuse.com/#feat=web-animation">Can I Use web-animation?</a> Data on support for the web-animation feature across the major browsers from caniuse.com. </p>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# WebGL
+					</script>
+				</section>
 			</div>
 		</div>
 
+		<!--
+			### Web Animation
+
+			* what are the different kinds of web animation
+			* **Native animation**
+			* CSS
+			* Canvas
+			* SMIL
+			* Web Animation API
+			* WebGL
+			* **External Libs**
+			* Greensock (https://greensock.com/tweenmax)
+			* VelocityJS
+			* jQuery
+			* Three.js
+			* BodyMovin' (Adobe AE to JS)
+			* **React Specific**
+			* React Motion
+
+			#### Resources
+
+			* http://codepen.io/sdras/
+			* http://webanimationweekly.com/
+			* https://css-tricks.com/comparison-animation-technologies/
+			* https://codepen.io/danwilson/post/css-motion-paths
+			* http://codepen.io/rachsmith/post/beginning-with-3d-webgl-pt-1-the-scene
+			* http://edankwan.com/experiments/particle-love/
+
+			https://www.chromeexperiments.com/webgl
+
+			https://material.google.com/motion/material-motion.html#
+		-->
+
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="http://cdn.jsdelivr.net/caniuse-embed/1.0.1/caniuse-embed.min.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
