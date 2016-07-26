@@ -43,10 +43,34 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<section>
+					<h3>"Don't make something unless it is both made necessary and useful;<br/>
+					but if it is both necessary and useful,<br/>
+					don't hesitate to make it beautiful."<br /> -- Shaker dictum</h3>
+				</section>
 				<section data-markdown>
 					<script type="text/template">
 						# Web Animation
 						#### <div class="animated infinite bounce">Making the web move</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Web Animation
+						* <div class="fragment">How Did We Get Here?</div>
+						* <div class="fragment">Why Use Animation in your UI?</div>
+						* <div class="fragment">Choices in Technology to do Animation</div>
+						* <div class="fragment">Examples of Each Technology</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# How Did We Get Here?
+						* <div class="fragment">In the beginning there were...Gifs! Hello 1987.</div>
+						<div class="fragment"><img src="http://i.imgur.com/aGNEBFc.gif"></div>
+						* <div class="fragment">Flash</div>
+						* <div class="fragment">Choices in Technology to do Animation</div>
+						* <div class="fragment">In 2009, the first public draft of the CSS animation spec was released.</div>
 					</script>
 				</section>
 				<section data-markdown>
@@ -60,11 +84,11 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						# What should I use?
-						* CSS
-						* Canvas
-						* Web Animation API
-						* WebGL	
+						## Choices in Technology to do Animation
+						* <div class="fragment">CSS</div>
+						* <div class="fragment">Canvas</div>
+						* <div class="fragment">Web Animation API</div>
+						* <div class="fragment">WebGL</div>	
 					</script>
 				</section>
 				<section data-markdown>
@@ -91,6 +115,20 @@
 					<script type="text/template">
 						# WebGL
 					</script>
+				</section>
+				<section>
+					<h2>WebGL API Support</h2>
+					<p class="ciu_embed" data-feature="web-animation" data-periods="future_1,current,past_1,past_2">   <a href="//caniuse.com/#feat=webgl">Can I Use webgl?</a> Data on support for the webgl feature across the major browsers from caniuse.com. </p>
+					<h2>Meh.</h2>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+				(def lazy-fib
+				(concat
+				[0 1]
+				<mark>((fn rfib [a b]</mark>
+						(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+					</code></pre>
 				</section>
 			</div>
 		</div>
@@ -126,6 +164,7 @@
 			https://www.chromeexperiments.com/webgl
 
 			https://material.google.com/motion/material-motion.html#
+			https://en.wikipedia.org/wiki/12_basic_principles_of_animation
 		-->
 
 		<script src="lib/js/head.min.js"></script>
