@@ -44,7 +44,8 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h4><strong>...animate deliberately.<br /></strong> If you cannot afford to slow down to think about animation and make well-informed and well-articulated decisions on behalf of the user, it is better that you not attempt it at all. Animation takes energy to perform, and a bad animation is worse than none at all.</h4>
+					<h3><div class="fragment">...animate deliberately.</div></h3>
+					<h4><div class="fragment">If you cannot afford to slow down to think about animation and make well-informed and well-articulated decisions on behalf of the user, it is better that you not attempt it at all. Animation takes energy to perform, and a bad animation is worse than none at all.</div></h4>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
@@ -57,8 +58,7 @@
 						# Motion on the Web
 						* <div class="fragment">How Did We Get Here?</div>
 						* <div class="fragment">Why Use Animation in your UI?</div>
-						* <div class="fragment">Choices in Technology to do Animation</div>
-						* <div class="fragment">Examples of Each Technology</div>
+						* <div class="fragment">Choices in Technology to do Animation and Examples</div>
 					</script>
 				</section>
 				<section data-markdown>
@@ -73,10 +73,10 @@
 				<section data-markdown>
 					<script type="text/template">
 						# Why?
-						* Guide a user
-						* Relationships between elements
-						* Distractions from whats happening behind the scene
-						* Add character
+						* <div class="fragment">Guide a user</div>
+						* <div class="fragment">Relationships between elements</div>
+						* <div class="fragment">Distractions from whats happening behind the scene</div>
+						* <div class="fragment">Add character</div>
 					</script>
 				</section>
 				<section data-markdown>
@@ -110,9 +110,9 @@
 				<section data-markdown>
 					<script type="text/template">
 						# Canvas
-						* Not DOM based, can paint and re-render things quickly and efficiently
-						* good for complex animations that also require interaction
-						* difficult to make accessible, unintuitive to make it responsive, retina-ready is WIP
+						* <div class="fragment">Not DOM based, can paint and re-render things quickly and efficiently</div>
+						* <div class="fragment">good for complex animations that also require interaction</div>
+						* <div class="fragment">difficult to make accessible, unintuitive to make it responsive, retina-ready is WIP</div>
 					</script>
 				</section>
 				<section data-markdown>
@@ -125,10 +125,10 @@
 				<section data-markdown>
 					<script type="text/template">
 						# Web Animation API
-						* is native JavaScript that allows you to create more complex sequential animations without loading any external scripts
-						* sequencing animations is easy
-						* performance is good
-						* not good browser support
+						* <div class="fragment">is native JavaScript that allows you to create more complex sequential animations without loading any external scripts</div>
+						* <div class="fragment">sequencing animations is easy</div>
+						* <div class="fragment">performance is good</div>
+						* <div class="fragment">not good browser support</div>
 					</script>
 				</section>
 				<section>
@@ -139,17 +139,17 @@
 				<section data-markdown>
 					<script type="text/template">
 						# WebGL
-						* amazing special affects
-						* hardware accelerated
-						* VR possibilities
-						* based on the OpenGL ES 2.0 specification (shaders, textures, camera control, lighting)
-						* technically this is canvas with a 3d context, but making the distinction because of the above point (steep learning curve)
+						* <div class="fragment">amazing special affects</div>
+						* <div class="fragment">hardware accelerated</div>
+						* <div class="fragment">VR possibilities</div>
+						* <div class="fragment">based on the OpenGL ES 2.0 specification (shaders, textures, camera control, lighting)</div>
+						* <div class="fragment">technically this is canvas with a 3d context, but making the distinction because of the above point (steep learning curve)</div>
 					</script>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
 					# WebGL Example
-					<a href="http://david.li/fluid/" target="_blank"><img src="images/fluid.png"/></a>
+					<a href="http://david.li/fluid/" target="_bl	k"><img src="images/fluid.png"/></a>
 					</script>
 				</section>
 				<section>
@@ -160,50 +160,14 @@
 				<section data-markdown>
 					<script type="text/template">
 					## Final Thoughts
-					* Make your [web animation invisible](https://medium.com/@stevenfabre/invisible-animation-ffa27d0b77e5#.fyoo31d43) if it's a web app
-					* If you're making a game, or making complex visualizations the above rule doesn't apply
+					* Make your [web animation invisible](https://medium.com/@stevenfabre/invisible-animation-ffa27d0b77e5#.fyoo31d43) if it's a web app (probably CSS animation)
+					* Canvas 2d for very complex interactions/animations, Canvas 3d (WebGL) for game-like textures, lighting, and camera controls
 					* Web Animation is becoming the basis for interaction design/motion design. Companies are starting to hire just for Motion design.
-					
 					<p>"You use motion design to help tell a product’s story, guide our users, improve usability, and make the user’s experience responsive and fun". - Motion Designer, Google Design Job Posting </p>
 					</script>
 				</section>
 			</div>
 		</div>
-
-		<!--
-			### Web Animation
-
-			* what are the different kinds of web animation
-			* **Native animation**
-			* CSS
-			* Canvas
-			* SMIL
-			* Web Animation API
-			* WebGL
-			* **External Libs**
-			* Greensock (https://greensock.com/tweenmax)
-			* VelocityJS
-			* jQuery
-			* Three.js
-			* BodyMovin' (Adobe AE to JS)
-			* **React Specific**
-			* React Motion
-
-			#### Resources
-
-			* http://codepen.io/sdras/
-			* http://webanimationweekly.com/
-			* https://css-tricks.com/comparison-animation-technologies/
-			* https://codepen.io/danwilson/post/css-motion-paths
-			* http://codepen.io/rachsmith/post/beginning-with-3d-webgl-pt-1-the-scene
-			* http://edankwan.com/experiments/particle-love/
-
-			https://www.chromeexperiments.com/webgl
-
-			https://material.google.com/motion/material-motion.html#
-			https://en.wikipedia.org/wiki/12_basic_principles_of_animation
-		-->
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 		<script src="//cdn.jsdelivr.net/caniuse-embed/1.0.1/caniuse-embed.min.js"></script>
