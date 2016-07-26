@@ -84,7 +84,7 @@
 						## Choices in Technology to do Animation
 						* <div class="fragment">CSS</div>
 						* <div class="fragment">Canvas</div>
-						* <div class="fragment">Web Animation API</div>
+						* <div class="fragment"><del>Web Animation API</del> (poor support, not ready)</div>
 						* <div class="fragment">WebGL</div>	
 					</script>
 				</section>
@@ -94,7 +94,7 @@
 						* <div class="fragment">performant</div>
 						* <div class="fragment">good for 3 or less chained animations</div>
 						* <div class="fragment">think about this first in your web apps</div>
-						* <div class="fragment">when this doesn't suit your needs or you can't do what you want...</div>	
+						* <div class="fragment">not good for complex, or many-step animations</div>	
 					</script>
 				</section>
 				<section>
@@ -110,6 +110,9 @@
 				<section data-markdown>
 					<script type="text/template">
 						# Canvas
+						* Not DOM based, can paint and re-render things quickly and efficiently
+						* good for complex animations that also require interaction
+						* difficult to make accessible, unintuitive to make it responsive, retina-ready is WIP
 					</script>
 				</section>
 				<section data-markdown>
@@ -121,13 +124,11 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-					# Canvas Example
-					<a href="http://david.li/fluid/" target="_blank"><img src="images/fluid.png"/></a>
-					</script>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
 						# Web Animation API
+						* is native JavaScript that allows you to create more complex sequential animations without loading any external scripts
+						* sequencing animations is easy
+						* performance is good
+						* not good browser support
 					</script>
 				</section>
 				<section>
@@ -138,21 +139,23 @@
 				<section data-markdown>
 					<script type="text/template">
 						# WebGL
+						* amazing special affects
+						* hardware accelerated
+						* VR possibilities
+						* based on the OpenGL ES 2.0 specification (shaders, textures, camera control, lighting)
+						* technically this is canvas with a 3d context, but making the distinction because of the above point (steep learning curve)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+					# WebGL Example
+					<a href="http://david.li/fluid/" target="_blank"><img src="images/fluid.png"/></a>
 					</script>
 				</section>
 				<section>
 					<h2>WebGL API Support</h2>
-					<p class="ciu_embed" data-feature="web-animation" data-periods="future_1,current,past_1,past_2">   <a href="//caniuse.com/#feat=webgl">Can I Use webgl?</a> Data on support for the webgl feature across the major browsers from caniuse.com. </p>
+					<p class="ciu_embed" data-feature="webgl" data-periods="future_1,current,past_1,past_2">   <a href="//caniuse.com/#feat=webgl">Can I Use webgl?</a> Data on support for the webgl feature across the major browsers from caniuse.com. </p>
 					<h2>Meh.</h2>
-				</section>
-				<section>
-					<pre><code data-trim data-noescape>
-				(def lazy-fib
-				(concat
-				[0 1]
-				<mark>((fn rfib [a b]</mark>
-						(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-					</code></pre>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
